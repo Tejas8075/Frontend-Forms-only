@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    border: 5px solid black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.container {
+    /* border: 2px solid red; */
+    border-radius: 5px;
+    max-width: 520px;
+    width: 60%;
+    /* height: 70%; */
+    background: #fff;
+}
+
+.context {
+    /* border: 2px solid yellow; */
+    margin: 0.5em 0 0 0.7em;
+    display: flex;
+}
+
+.container h1 {
+    margin: 0.5em 0 0.4em 0.7em;
+    border-bottom: 5px solid #9b59b6;
+    width: 40px;
+}
+
+.name,
+.email-Id,
+.pwd,
+.user-name,
+.phno,
+.Confirm-Password {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-side input,
+.left-label {
+    margin-left: 0.8em;
+}
+
+.right-label {
+    margin-left: 0.6em;
+
+}
+
+.context-input {
+    width: 90%;
+    margin: 0.5em 6em 0.8em 0.6em;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    padding-left: 0.5em;
+    border-radius: 2px;
+    padding: 0.5em 0.3em;
+    transition: all 0.3s ease;
+}
+
+.context-input:hover,
+.context-input:focus{
+    border-color: black;
+}
+
+.context label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.gender-info {
+    /* border: 2px solid green; */
+    margin-top: 0.7em;
+}
+
+.gender-info h3 {
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+
+.gender-info .radioBtn {
+    margin-left: 1.4em;
+}
+
+.gender-info label {
+    margin-left: 0.3em;
+    margin-right: 2em;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+button {
+    width: 90%;
+    font-family: 'Ubuntu';
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 1.1em;
+    padding: 0.8em;
+    color: #fff;
+    background: linear-gradient(120deg, #9e2bcc, #0a5d94);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 420px) {
+    .container h1{
+        font-size: 1.5rem;
+    }
+
+    .context{
+        flex-wrap: wrap;
+    }
+
+    .context label{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 365px) {
+    .container{
+        align-items: center;
+    }
+}
